@@ -114,7 +114,7 @@ endTime = datetime.now().strftime('%Y-%m-%d')
 current_date = datetime.now().date()
 earthquake_base_URL = "https://earthquake.usgs.gov/fdsnws/event/1/"
 query = f"query?format=geojson&latitude={lat}&longitude={lon}"
-StartEndTime =f"&maxradius=10&starttime={startTime}&{endTime}&minmagnitude=5"
+StartEndTime =f"&maxradius=7&starttime={startTime}&{endTime}&minmagnitude=5"
 url = earthquake_base_URL + query + StartEndTime 
 
 
